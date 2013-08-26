@@ -1,0 +1,12 @@
+{application, endi,
+ [
+  {description, "Erlang Node Discoverer Application."},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { endi_app, []}},
+  {env, []}
+ ]}.

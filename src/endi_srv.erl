@@ -44,7 +44,7 @@ init([]) ->
 node_spec_to_node(NodeSpec) ->
     case NodeSpec of
 	_ when is_atom(NodeSpec) ->
-	    case lists:member('@',atom_to_list(NodeSpec)) of
+	    case lists:member($@,atom_to_list(NodeSpec)) of
 		true  -> NodeSpec;
 		false -> node_spec_to_node({NodeSpec, localhost})
 	    end;
